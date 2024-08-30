@@ -1,0 +1,67 @@
+Configuração do Modelo de Jogos com Prisma:
+
+    Configurar o modelo de jogos utilizando Prisma, incluindo campos como Id, Nome, Categoria e Data de Lançamento.
+
+Implementação com NestJS:
+
+    Utilizar a estrutura do NestJS, composta por Controller, Service e Entity, para realizar as seguintes operações:
+
+    Cadastro de um Jogo:
+        Criar um novo jogo com os dados fornecidos.
+
+    Busca de um Jogo por ID:
+        Recuperar as informações de um jogo específico utilizando seu ID.
+
+    Busca de Todos os Jogos:
+        Listar todos os jogos cadastrados no sistema.
+
+    Atualização de um Jogo por ID:
+        Atualizar as informações de um jogo específico identificado pelo seu ID.
+
+    Exclusão de um Jogo:
+        Remover um jogo do sistema com base no seu ID.
+
+Utilização do Cliente Prisma:
+
+    Todas as operações devem ser implementadas utilizando o cliente Prisma para interagir com o banco de dados.
+
+=========================================================================================================================================================================
+
+Para criar rapidamente um controlador CRUD com validação integrada, você pode usar o gerador CRUD da CLI : nest g resource [name].
+
+-Criar
+POST /users
+
+-Ler
+GET /users
+GET /users/:id
+
+-Alterar
+PUT /users/:id
+PATCH /users/:id
+
+-Excluir
+DELETE /users/:id
+
+
+
+===================== PRISMA ===========================================
+
+npx prisma migrate dev --name init //cria um banco de dados e as tabelas
+
+prisma generate //atualiza as api's js
+
+npx prisma db pull //olha o banco de dados e cria o arquivo schema
+
+
+
+
+
+
+====================== DOCKER =================================
+
+
+
+
+============================= Dúvidas ============================
+Entender melhor Migrations
